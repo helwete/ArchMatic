@@ -18,14 +18,14 @@ curl -s "https://www.archlinux.org/mirrorlist/?country=CA&protocol=https&use_mir
 
 
 echo -e "\nInstalling prereqs...\n$HR"
-#pacman -S --noconfirm gptfdisk btrfs-progs
+pacman -S --noconfirm gptfdisk btrfs-progs
 
 echo "-------------------------------------------------"
 echo "-------select your disk to format----------------"
 echo "-------------------------------------------------"
-#lsblk
+lsblk
 echo "Please enter disk: (example /dev/sda)"
-#read DISK
+read DISK
 echo "--------------------------------------"
 echo -e "\nFormatting disk...\n$HR"
 echo "--------------------------------------"
